@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//Pages
 import { SignInComponent } from './pages/sign-in/sign-in.component';
-import { FormComponent } from './Components/form/form.component';
+
+//Components
 import { InputFormComponent } from './Components/input-form/input-form.component';
+import { ButtonComponent } from './Components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    FormComponent,
-    InputFormComponent
+    InputFormComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

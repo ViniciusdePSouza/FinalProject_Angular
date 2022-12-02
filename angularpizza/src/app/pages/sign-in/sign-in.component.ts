@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-const  logo = '../../../img/logo.svg'
 
-import { InputFormComponent } from '../../Components/input-form/input-form.component'
+import { ButtonComponent} from '../../Components/button/button.component'
 
 @Component({
   selector: 'sign-in',
@@ -9,8 +8,10 @@ import { InputFormComponent } from '../../Components/input-form/input-form.compo
   styleUrls: ['./sign-in.component.scss']
 })
 export class SignInComponent implements OnInit {
-
-  constructor() { }
+  logoPath!: string
+  constructor() {
+    this.logoPath = 'src\img\logo.svg'
+   }
 
   ngOnInit(): void {
   }

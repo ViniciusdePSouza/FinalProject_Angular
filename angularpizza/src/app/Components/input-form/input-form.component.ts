@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputFormComponent implements OnInit {
 
-  name: string = 'Email'
+  title: string = 'Email'
   placeholder: string = 'fulanodasilva@email.com'
 
   constructor() { }
