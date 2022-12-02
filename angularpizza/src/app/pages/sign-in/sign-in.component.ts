@@ -10,7 +10,7 @@ import { ButtonComponent} from '../../Components/button/button.component'
 export class SignInComponent implements OnInit {
   logoPath!: string
   constructor() {
-    this.logoPath = 'src\img\logo.svg'
+    this.logoPath = '/assets/img/logo.svg'
    }
 
   ngOnInit(): void {

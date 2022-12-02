@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'input-form',
@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputFormComponent implements OnInit {
 
-  title: string = 'Email'
-  placeholder: string = 'fulanodasilva@email.com'
+  @Input()
+  title!: string
+
+  @Input()
+  placeholder!: string
+
+  @Input()
+  type!: string
 
   constructor() { }
 
