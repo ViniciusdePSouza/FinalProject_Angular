@@ -9,5 +9,9 @@
         "placeholderName": "Insira seu nome",
         "titleName": "Nome",
         "placeholderEmail": "fulanodasilva@email.com"
+    },
+
+    "button": {
+        "title": "Entrar"
     }
 }

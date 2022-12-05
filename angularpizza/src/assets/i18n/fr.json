@@ -1,0 +1,17 @@
+{
+    "form": {
+        "title": "Connexion"
+    },
+
+    "input": {
+        "placeholderPassword": "S'il vous plait entrez votre mot de passe",
+        "titlePassword": "Le mot de passe",
+        "placeholderName": "S'il vous plaît entrez votre nom",
+        "titleName": "Nom",
+        "placeholderEmail": "quelqu'un@email.com"
+    },
+
+    "button": {
+        "title": "Connexion"
+    }
+}

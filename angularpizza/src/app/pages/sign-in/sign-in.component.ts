@@ -12,13 +12,18 @@ export class SignInComponent implements OnInit {
   logoPath!: string
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    this.translate.setDefaultLang('pt-bt');
+    this.translate.use('pt-br');
 
     this.logoPath = '/assets/img/logo.svg'
    }
 
   ngOnInit(): void {
+  }
+
+  changeLang(event: any) {
+    const lang = event?.target?.value || 'pt-br'
+    this.translate.use(lang)
   }
 
 }

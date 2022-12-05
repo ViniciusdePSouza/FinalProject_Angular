@@ -1,13 +1,18 @@
 <div class="container">
+    <select (change)='changeLang($event)'>
+        <option value="en">English</option>
+        <option value="pt-br">Portuguese</option>
+        <option value="fr">France</option>
+    </select>
     <header>
         <img [src]="logoPath" alt="">
         <h1> Food Angular </h1>
     </header>
     <form>
-        <h2>{{ 'form.title' | translate }}</h2>
-        <input-form title='Email' placeholder='fulanodasilva@email.com'></input-form>
+        <h2>{{'form.title' | translate }}</h2>
+        <input-form title='Email' placeholder='fulanoasilva@email.com'></input-form>
         <input-form type="password" placeholder='Insira sua senha' title='Senha'></input-form>
-        <app-button title='Login'></app-button>
+        <app-button ></app-button>
     </form>
 </div>
  

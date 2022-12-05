@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { TranslateService } from "@ngx-translate/core";
+
 @Component({
   selector: 'input-form',
   templateUrl: './input-form.component.html',
@@ -16,7 +18,10 @@ export class InputFormComponent implements OnInit {
   @Input()
   type!: string
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+   }
 
   ngOnInit(): void {
   }

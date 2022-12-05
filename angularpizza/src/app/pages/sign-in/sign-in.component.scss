@@ -63,8 +63,28 @@ app-button {
     width: 100%;
 }
 
-img { 
+img {
     width: 5rem;
     height: 5rem;
 }
 
+select {
+    margin-left: 150rem;
+
+    border: none;
+
+    padding: 0.8rem;
+
+    border-radius: 5px;
+
+    background-color: (--dark-blue-heavy);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    -webkit-appearance: none;
+}

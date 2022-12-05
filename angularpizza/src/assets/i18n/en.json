@@ -9,5 +9,9 @@
         "placeholderName": "Please enter your name",
         "titleName": "Name",
         "placeholderEmail": "someone@email.com"
+    },
+
+    "button": {
+        "title": "Login"
     }
 }

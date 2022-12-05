@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { TranslateService } from "@ngx-translate/core";
+
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
@@ -9,7 +11,10 @@ export class ButtonComponent implements OnInit {
   @Input()
   title!: string
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('pt-bt');
+    this.translate.use('pt-br');
+   }
 
   ngOnInit(): void {
   }
