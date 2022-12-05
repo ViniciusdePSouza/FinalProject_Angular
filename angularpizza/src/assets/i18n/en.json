@@ -1,0 +1,13 @@
+{
+    "form": {
+        "title": "Log In"
+    },
+
+    "input": {
+        "placeholderPassword": "Please enter your password",
+        "titlePassword": "Password",
+        "placeholderName": "Please enter your name",
+        "titleName": "Name",
+        "placeholderEmail": "someone@email.com"
+    }
+}
