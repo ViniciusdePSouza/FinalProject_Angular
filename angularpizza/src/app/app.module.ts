@@ -9,6 +9,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { SignInModule } from './pages/sign-in/sign-in.module';
+import { SignUpModule } from './pages/sign-up/sign-up.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SignInModule } from './pages/sign-in/sign-in.module';
                 deps: [HttpClient]
             }
         }),
-    SignInModule
+    SignInModule,
+    SignUpModule
   ],
   providers: [
     HttpClient

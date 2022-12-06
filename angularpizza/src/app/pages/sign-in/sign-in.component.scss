@@ -40,7 +40,7 @@ form {
 
     width: 100%;
 
-    padding: 7rem 6rem;
+    padding: 5.5rem 6rem;
 
     background-color: var(--dark-blue-heavy);
     color: var(--white);
@@ -69,7 +69,7 @@ img {
 }
 
 select {
-    margin-left: 150rem;
+    margin-left: 100rem;
 
     border: none;
 
@@ -87,4 +87,18 @@ select {
     display: flex;
     align-items: center;
     -webkit-appearance: none;
+}
+
+a{
+    margin-top: 3rem;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    -webkit-appearance: none;
+
+    color: (--white);
 }

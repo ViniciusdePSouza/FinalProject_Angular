@@ -10,11 +10,12 @@
     </header>
     <form>
         <h2>{{'form.title' | translate }}</h2>
+        <input-form title='text' placeholder='Insira seu nome' title='Nome'></input-form>
         <input-form title='Email' placeholder='fulanoasilva@email.com'></input-form>
         <input-form type="password" placeholder='Insira sua senha' title='Senha'></input-form>
         <app-button ></app-button>
 
-        <a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page"> {{'anchor.title' | translate}} </a>
+        <a routerLink="register" routerLinkActive="active" ariaCurrentWhenActive="page"> {{'anchor.get-back' | translate}} </a>
     </form>
 </div>
  

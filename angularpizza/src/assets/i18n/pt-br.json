@@ -13,5 +13,10 @@
 
     "button": {
         "title": "Entrar"
+    },
+
+    "anchor": {
+        "title": "Criar nova conta",
+        "get-back": "Voltar para página de Login"
     }
 }
