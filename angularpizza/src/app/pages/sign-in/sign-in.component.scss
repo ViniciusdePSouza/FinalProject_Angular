@@ -86,10 +86,10 @@ select {
     line-height: 160%;
     display: flex;
     align-items: center;
-    -webkit-appearance: none;
+
 }
 
-a{
+a {
     margin-top: 3rem;
 
     font-family: 'Roboto';
@@ -98,7 +98,10 @@ a{
     line-height: 160%;
     display: flex;
     align-items: center;
-    -webkit-appearance: none;
 
     color: (--white);
+}
+
+a:-webkit-any-link {
+    color: var(--white);
 }
