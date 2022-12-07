@@ -7,11 +7,12 @@
                 <a>{{'nav.about' | translate }}</a>
                 <a>{{'nav.reservation' | translate }}</a>
             </ul>
+            
+            <select (change)='changeLang($event)'>
+                <option value="pt-br">Portuguese</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+            </select>
         </nav>
-        <select (change)='changeLang($event)'>
-            <option value="pt-br">Portuguese</option>
-            <option value="en">English</option>
-            <option value="fr">French</option>
-        </select>
     </header>
 </div>

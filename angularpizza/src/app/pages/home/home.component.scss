@@ -9,6 +9,8 @@ nav {
     width: 100%;
     background-color: var(--light-blue);
     padding:  6rem 6rem;
+
+    display: flex;
 }
 
 ul {
@@ -48,4 +50,22 @@ img {
 
 .active {
     color: var(--shiny-green)
+}
+
+
+select {
+    border: none;
+
+    padding: 0.8rem;
+
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    -webkit-appearance: none;
 }
