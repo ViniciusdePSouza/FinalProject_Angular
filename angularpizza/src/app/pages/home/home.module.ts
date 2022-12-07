@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
-import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
+
 //Pages
-import { SignUpComponent } from './sign-up.component';
+import { HomeComponent } from './home.component';
 
 //Modules
 import { SharedModule } from '../../Components/shared.module'
@@ -10,16 +10,15 @@ import { SharedModule } from '../../Components/shared.module'
 
 @NgModule({
   declarations: [
-    SignUpComponent,
+    HomeComponent,
   ],
   imports: [
     SharedModule,
-    FormsModule,
-    RouterModule
+    FormsModule
   ],
   providers: [],
   exports: [
-    SignUpComponent
+    HomeComponent
   ]
 })
-export class SignUpModule { }
+export class HomeModule { }

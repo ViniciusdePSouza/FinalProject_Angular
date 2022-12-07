@@ -6,7 +6,7 @@
     "input": {
         "placeholderPassword": "S'il vous plait entrez votre mot de passe",
         "titlePassword": "Le mot de passe",
-        "placeholderName": "S'il vous plaît entrez votre nom",
+        "placeholderName": "Votre nom s'il vous plait",
         "titleName": "Nom",
         "placeholderEmail": "quelqu'un@email.com"
     },
@@ -18,5 +18,11 @@
     "anchor": {
         "title":"Créer un nouveau compte",
         "get-back": "Retour à la page de connexion"
+    },
+
+    "nav": {
+        "menu": "Menu",
+        "about": "À propos de nous",
+        "reservation": "Faites votre réservation"
     }
 }

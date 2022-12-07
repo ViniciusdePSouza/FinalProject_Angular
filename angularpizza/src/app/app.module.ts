@@ -10,6 +10,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { SignInModule } from './pages/sign-in/sign-in.module';
 import { SignUpModule } from './pages/sign-up/sign-up.module';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SignUpModule } from './pages/sign-up/sign-up.module';
             }
         }),
     SignInModule,
-    SignUpModule
+    SignUpModule,
+    HomeModule
   ],
   providers: [
     HttpClient

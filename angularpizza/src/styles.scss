@@ -8,9 +8,9 @@
         font-size: 62.5%;
 
         --bg-blue: #95d9f8;
-        --light-blue: #61c9d4;
+        --light-blue: #ACFAFF;
         --dark-blue-heavy: #011c29;
-        --shiny-green: #23CE20;
+        --shiny-green: #09ff05;
         --translucid-dark-blue:rgba(0, 0, 0, 0.32);
         --white: #ffffff;
         --black: #001119;
@@ -42,6 +42,10 @@
     button:hover,
     a:hover {
         filter: brightness(1.1);
+    }
+
+    a::after {
+        color: var(--white)!important;
     }
 
     button:disabled {

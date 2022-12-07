@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { TranslateService } from "@ngx-translate/core";
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'sign-up',

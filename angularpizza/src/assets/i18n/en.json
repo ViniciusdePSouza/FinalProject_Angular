@@ -18,7 +18,11 @@
     "anchor": {
         "title": "Create a new account",
         "get-back": "Back to login page"
+    },
+
+    "nav": {
+        "menu": "Menu",
+        "about": "About Us",
+        "reservation": "Make your reservation"
     }
-
-
 }

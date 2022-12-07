@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
-
+import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
 //Pages
 import { SignInComponent } from './sign-in.component';
 
@@ -14,7 +14,8 @@ import { SharedModule } from '../../Components/shared.module'
   ],
   imports: [
     SharedModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   exports: [

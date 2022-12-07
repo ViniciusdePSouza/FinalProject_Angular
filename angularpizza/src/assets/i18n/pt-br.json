@@ -2,7 +2,6 @@
     "form": {
         "title": "Faça Login"
     },
-
     "input": {
         "placeholderPassword": "Insira sua Senha",
         "titlePassword": "Senha",
@@ -10,13 +9,16 @@
         "titleName": "Nome",
         "placeholderEmail": "fulanodasilva@email.com"
     },
-
     "button": {
         "title": "Entrar"
     },
-
     "anchor": {
         "title": "Criar nova conta",
         "get-back": "Voltar para página de Login"
+    },
+    "nav": {
+        "menu": "Cardápio",
+        "about": "Sobre nós",
+        "reservation": "Faça sua reserva"
     }
 }
