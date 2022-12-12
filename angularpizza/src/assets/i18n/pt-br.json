@@ -20,5 +20,12 @@
         "menu": "Cardápio",
         "about": "Sobre nós",
         "reservation": "Faça sua reserva"
+    },
+
+    "reservation" : {
+        "title": "Faça sua reserva",
+        "button": "Reservar",
+        "date": "Data",
+        "table-for": "Mesa para..."
     }
 }

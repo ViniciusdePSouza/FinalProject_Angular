@@ -17,7 +17,7 @@ export class ReservationComponent implements OnInit {
     this.translate.use('pt-br');
 
     this.logoPath = '/assets/img/logo.svg'
-    this.restaurantPath = '/assets/img/restaurant.jpg'
+    this.restaurantPath = '/assets/img/entrance.jpg'
   }
 
   ngOnInit(): void {

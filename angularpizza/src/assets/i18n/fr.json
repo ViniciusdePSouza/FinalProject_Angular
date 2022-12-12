@@ -24,5 +24,12 @@
         "menu": "Menu",
         "about": "À propos de nous",
         "reservation": "Faites votre réservation"
+    },
+
+    "reservation" : {
+        "title": "Faites votre réservation",
+        "button": "Réserve",
+        "date": "Date",
+        "table-for": "Table pour..."
     }
 }

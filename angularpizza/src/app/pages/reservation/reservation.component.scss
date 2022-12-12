@@ -90,7 +90,7 @@ select {
 }
 
 #restaurant-img {
-    width: 30rem
+    width: 50rem
 }
 
 p {
@@ -101,4 +101,27 @@ p {
     line-height: 160%;
 
     color: var(--white)
+}
+
+form {
+    width: 40%;
+
+    padding: 5rem;
+    border-radius: 5px;
+
+    background-color: var(--black);
+
+    >h2 {
+        margin-bottom: 3rem;
+
+        text-align: center;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 160%;
+    
+        color: var(--white)
+    }
 }
