@@ -1,20 +1,6 @@
 <div class="body">
     <img src="{{logoPath}}" alt="" id="logo-img">
-    <header>
-        <nav>
-            <ul>
-                <a>{{'nav.menu' | translate }}</a>
-                <a>{{'nav.about' | translate }}</a>
-                <a>{{'nav.reservation' | translate }}</a>
-            </ul>
-
-            <select (change)='changeLang($event)'>
-                <option value="pt-br">Portuguese</option>
-                <option value="en">English</option>
-                <option value="fr">French</option>
-            </select>
-        </nav>
-    </header>
+    <app-header></app-header>
 
     <div class="container">
         <form>

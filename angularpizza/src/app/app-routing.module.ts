@@ -6,6 +6,7 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component'
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component'
 import { ReservationComponent } from './pages/reservation/reservation.component'
+import { MenuComponent } from './pages/menu/menu.component'
 
 const routes: Routes = [
   {
@@ -31,6 +32,11 @@ const routes: Routes = [
   {
     path: 'reservation',
     component: ReservationComponent
+  },
+
+  {
+    path: 'menu',
+    component: MenuComponent
   },
   
   {

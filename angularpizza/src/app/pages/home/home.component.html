@@ -1,18 +1,4 @@
 <div class="body">
     <img src="{{logoPath}}" alt="">
-    <header>
-        <nav>
-            <ul>
-                <a routerLink="">{{'nav.menu' | translate }}</a>
-                <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">{{'nav.about' | translate }}</a>
-                <a>{{'nav.reservation' | translate }}</a>
-            </ul>
-            
-            <select (change)='changeLang($event)'>
-                <option value="pt-br">Portuguese</option>
-                <option value="en">English</option>
-                <option value="fr">French</option>
-            </select>
-        </nav>
-    </header>
+    <app-header></app-header>
 </div>

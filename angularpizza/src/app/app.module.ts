@@ -4,15 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { SignInModule } from './pages/sign-in/sign-in.module';
 import { SignUpModule } from './pages/sign-up/sign-up.module';
 import { HomeModule } from './pages/home/home.module';
 import { AboutModule } from './pages/about/about.module';
 import { ReservationModule } from './pages/reservation/reservation.module';
+import { MenuModule } from './pages/menu/menu.module';
 
 @NgModule({
   declarations: [
@@ -22,18 +23,19 @@ import { ReservationModule } from './pages/reservation/reservation.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     SignInModule,
     SignUpModule,
     HomeModule,
     AboutModule,
-    ReservationModule
+    ReservationModule,
+    MenuModule
   ],
   providers: [
     HttpClient

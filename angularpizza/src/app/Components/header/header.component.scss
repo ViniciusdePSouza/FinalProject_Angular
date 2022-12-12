@@ -1,0 +1,62 @@
+header {
+    width: 100%;
+    display: flex;
+
+    margin-top: 10rem;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--light-blue);
+    padding:  6rem 6rem;
+
+    display: flex;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#logo-img {
+    position: absolute;
+
+    z-index: 1;
+
+    width: 12rem;
+    height: 12rem;
+
+    left: 47%;
+    bottom: 92%;
+}
+
+select {
+    border: none;
+
+    padding: 0.8rem;
+
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.active {
+    color: var(--shiny-green)
+}
