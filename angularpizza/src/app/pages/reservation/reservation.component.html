@@ -1,13 +1,13 @@
 <div class="body">
-    <img src="{{logoPath}}" alt="">
+    <img src="{{logoPath}}" alt="" id="logo-img">
     <header>
         <nav>
             <ul>
-                <a routerLink="">{{'nav.menu' | translate }}</a>
-                <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">{{'nav.about' | translate }}</a>
+                <a class="active">{{'nav.menu' | translate }}</a>
+                <a>{{'nav.about' | translate }}</a>
                 <a>{{'nav.reservation' | translate }}</a>
             </ul>
-            
+
             <select (change)='changeLang($event)'>
                 <option value="pt-br">Portuguese</option>
                 <option value="en">English</option>
@@ -15,4 +15,8 @@
             </select>
         </nav>
     </header>
+
+    <div class="container">
+        <img src="{{restaurantPath}}" alt="Foto do restaurant" id="restaurant-img">
+    </div>
 </div>

@@ -11,6 +11,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { SignInModule } from './pages/sign-in/sign-in.module';
 import { SignUpModule } from './pages/sign-up/sign-up.module';
 import { HomeModule } from './pages/home/home.module';
+import { AboutModule } from './pages/about/about.module';
+import { ReservationModule } from './pages/reservation/reservation.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { HomeModule } from './pages/home/home.module';
         }),
     SignInModule,
     SignUpModule,
-    HomeModule
+    HomeModule,
+    AboutModule,
+    ReservationModule
   ],
   providers: [
     HttpClient
