@@ -1,0 +1,51 @@
+.card {
+    width: 30rem;
+
+    padding: 3rem 2rem;
+
+    margin-top: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--translucid-dark-blue);
+
+    border-radius: 5px;
+
+    >img {
+        width: 10rem;
+        height: 10rem;
+
+        margin-bottom: 1.6rem
+    }
+
+    >h1 {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 2.4rem;
+
+        color: var(--white);
+
+        margin-bottom: 1.8rem;
+    }
+
+    >p {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 1.4rem;
+
+        color: var(--grey)
+    }
+
+    >span {
+        font-family: 'Roboto';
+
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 160%;
+
+        color: var(--shiny-blue)
+    }
+}

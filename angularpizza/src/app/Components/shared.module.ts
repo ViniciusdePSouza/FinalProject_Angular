@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { InputFormComponent } from './input-form/input-form.component';
 import { ButtonComponent } from './button/button.component';
 import { HeaderComponent } from './header/header.component';
+import { CardComponent } from './card/card.component';
 
 //Modules
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,7 +13,8 @@ import { TranslateModule } from '@ngx-translate/core';
     declarations: [
         InputFormComponent,
         ButtonComponent,
-        HeaderComponent
+        HeaderComponent,
+        CardComponent,
     ],
     imports: [
         TranslateModule
@@ -22,7 +24,8 @@ import { TranslateModule } from '@ngx-translate/core';
         InputFormComponent,
         ButtonComponent,
         TranslateModule,
-        HeaderComponent
+        HeaderComponent,
+        CardComponent
     ]
 })
 export class SharedModule { }
