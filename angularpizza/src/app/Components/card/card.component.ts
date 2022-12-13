@@ -1,4 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+// interface Dish {
+//   id: number,
+//   name: string,
+//   description: string,
+//   price: number,
+//   type: string,
+//   photo: string,
+//   ingredients: string[]
+// }
+
+import { Dish } from '../../../assets/interfaces/dishInterface'
+
 
 @Component({
   selector: 'app-card',
@@ -8,6 +21,9 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   dishPath!: string
+
+  @Input()
+  dish!: Dish
 
   constructor() {
     this.dishPath = '/assets/img/Spaguetti-Gambe.png'

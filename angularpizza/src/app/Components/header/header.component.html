@@ -1,9 +1,9 @@
 <header>
         <nav>
             <ul>
-                <a>{{'nav.menu' | translate }}</a>
-                <a>{{'nav.about' | translate }}</a>
-                <a>{{'nav.reservation' | translate }}</a>
+                <a routerLink="/menu">{{'nav.menu' | translate }}</a>
+                <a routerLink="/about">{{'nav.about' | translate }}</a>
+                <a routerLink="/reservation">{{'nav.reservation' | translate }}</a>
             </ul>
 
             <select (change)='changeLang($event)'>

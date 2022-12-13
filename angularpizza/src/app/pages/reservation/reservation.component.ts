@@ -23,9 +23,4 @@ export class ReservationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeLang(event: any) {
-    const lang: string = event?.target?.value || 'pt-br'
-    this.translate.use(lang)
-  }
-
 }

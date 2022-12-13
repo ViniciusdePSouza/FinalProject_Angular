@@ -1,5 +1,5 @@
 .card {
-    width: 30rem;
+    width: 25rem;
 
     padding: 3rem 2rem;
 
@@ -29,6 +29,7 @@
         color: var(--white);
 
         margin-bottom: 1.8rem;
+        text-align: center;
     }
 
     >p {
@@ -36,7 +37,11 @@
         font-weight: 400;
         font-size: 1.4rem;
 
-        color: var(--grey)
+        color: var(--grey);
+
+        margin-bottom: 1rem;
+
+        text-align: center;
     }
 
     >span {
@@ -46,6 +51,8 @@
         font-size: 3.2rem;
         line-height: 160%;
 
-        color: var(--shiny-blue)
+        color: var(--shiny-blue);
+
+        text-align: center;
     }
 }

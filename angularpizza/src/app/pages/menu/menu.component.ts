@@ -1,14 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Dish {
-  id: number,
-  name: string,
-  description: string,
-  price: number,
-  type: string,
-  photo: string,
-  ingredients: string[]
-}
+import { Dish } from '../../../assets/interfaces/dishInterface'
 
 import { TranslateService } from "@ngx-translate/core";
 
@@ -124,11 +116,5 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  changeLang(event: any) {
-    const lang: string = event?.target?.value || 'pt-br'
-    this.translate.use(lang)
-  }
-
 
 }

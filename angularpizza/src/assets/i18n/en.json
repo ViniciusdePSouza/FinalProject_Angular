@@ -31,5 +31,11 @@
         "button": "Book",
         "date": "Date",
         "table-for": "Table for..."
+    },
+    
+    "menu" : {
+        "main": "Pratos Principais",
+        "dessert": "Sobremesa",
+        "drinks": "Bebidas"
     }
 }

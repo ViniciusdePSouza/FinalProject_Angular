@@ -31,5 +31,11 @@
         "button": "Réserve",
         "date": "Date",
         "table-for": "Table pour..."
+    },
+
+    "menu" : {
+        "main": "Pratos Principais",
+        "dessert": "Sobremesa",
+        "drinks": "Bebidas"
     }
 }

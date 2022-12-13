@@ -8,6 +8,7 @@ import { CardComponent } from './card/card.component';
 
 //Modules
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { TranslateModule } from '@ngx-translate/core';
         CardComponent,
     ],
     imports: [
-        TranslateModule
+        TranslateModule,
+        RouterModule
     ],
     providers: [],
     exports: [

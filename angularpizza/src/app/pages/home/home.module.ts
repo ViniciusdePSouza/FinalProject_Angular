@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 
 //Modules
 import { SharedModule } from '../../Components/shared.module'
+import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SharedModule } from '../../Components/shared.module'
   ],
   imports: [
     SharedModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
   ],
   providers: [],
   exports: [
