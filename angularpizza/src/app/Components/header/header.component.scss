@@ -1,6 +1,7 @@
 header {
     width: 100%;
     display: flex;
+    align-items: center;
 
     margin-top: 10rem;
 }
@@ -11,6 +12,7 @@ nav {
     padding:  3rem 6rem;
 
     display: flex;
+    align-items: center;
 }
 
 ul {
@@ -37,6 +39,10 @@ a:-webkit-any-link {
 }
 
 select {
+    height: 5rem;
+
+    margin-bottom: -1rem;
+
     border: none;
 
     padding: 0.8rem;
@@ -50,6 +56,7 @@ select {
     line-height: 160%;
     display: flex;
     align-items: center;
+
     
 }
 
