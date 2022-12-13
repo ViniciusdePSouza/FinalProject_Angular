@@ -14,6 +14,7 @@ import { HomeModule } from './pages/home/home.module';
 import { AboutModule } from './pages/about/about.module';
 import { ReservationModule } from './pages/reservation/reservation.module';
 import { MenuModule } from './pages/menu/menu.module';
+import { SharedModule } from './Components/shared.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MenuModule } from './pages/menu/menu.module';
     HomeModule,
     AboutModule,
     ReservationModule,
-    MenuModule
+    MenuModule,
+    SharedModule
   ],
   providers: [
     HttpClient

@@ -1,14 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-// interface Dish {
-//   id: number,
-//   name: string,
-//   description: string,
-//   price: number,
-//   type: string,
-//   photo: string,
-//   ingredients: string[]
-// }
+import { NgModule } from '@angular/core';
 
 import { Dish } from '../../../assets/interfaces/dishInterface'
 
