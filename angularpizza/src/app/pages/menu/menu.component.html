@@ -6,21 +6,19 @@
        <section>
             <h1>{{ 'menu.main' | translate }}</h1>
             <div class="card-container">
-                <app-card [dish]="mainDishes[0]"></app-card>
-                <app-card [dish]="mainDishes[1]"></app-card>
-                <app-card [dish]="mainDishes[2]"></app-card>
+                <app-card *ngFor="let dish of mainDishes" [dish]="dish"></app-card>
             </div>
        </section>
        <section>
             <h1>{{ 'menu.dessert' | translate }}</h1>
-            <div *ngFor="let dessert of desserts" class="render-card"  class="card-container">
-                <app-card [dish]="dessert"></app-card>
+            <div class="card-container">
+                <app-card *ngFor="let dessert of desserts" [dish]="dessert"></app-card>
             </div>
        </section>
        <section>
             <h1>{{ 'menu.drinks' | translate }}</h1>
-            <div *ngFor="let drink of drinks" class="render-card" class="card-container">
-                <app-card [dish]="drink"></app-card>
+            <div  class="render-card" class="card-container">
+                <app-card  *ngFor="let drink of drinks" [dish]="drink"></app-card>
             </div>
        </section>
     </div>

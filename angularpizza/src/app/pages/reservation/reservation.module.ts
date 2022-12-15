@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms'
 //Pages
 import { ReservationComponent } from './reservation.component';
 
-
 //Modules
 import { SharedModule } from '../../Components/shared.module'
 import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -18,7 +18,8 @@ import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
   imports: [
     SharedModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   providers: [],
   exports: [

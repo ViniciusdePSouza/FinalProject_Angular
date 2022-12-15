@@ -34,8 +34,8 @@
     },
 
     "menu" : {
-        "main": "Pratos Principais",
-        "dessert": "Sobremesa",
-        "drinks": "Bebidas"
+        "main": "Plat Principaux",
+        "dessert": "Desserts",
+        "drinks": "Boissons"
     }
 }

@@ -18,14 +18,14 @@ import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
         CardComponent,
     ],
     imports: [
-        TranslateModule,
+        TranslateModule.forChild(),
         RouterModule
     ],
     providers: [],
     exports: [
         InputFormComponent,
         ButtonComponent,
-        TranslateModule,
+        // TranslateModule,
         HeaderComponent,
         CardComponent
     ]

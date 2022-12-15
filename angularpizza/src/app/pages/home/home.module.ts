@@ -7,6 +7,7 @@ import { HomeComponent } from './home.component';
 //Modules
 import { SharedModule } from '../../Components/shared.module'
 import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
     SharedModule,
     FormsModule,
     RouterModule,
+    TranslateModule
   ],
   providers: [],
   exports: [

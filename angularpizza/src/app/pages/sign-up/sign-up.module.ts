@@ -6,6 +6,7 @@ import { SignUpComponent } from './sign-up.component';
 
 //Modules
 import { SharedModule } from '../../Components/shared.module'
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from '../../Components/shared.module'
   imports: [
     SharedModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   providers: [],
   exports: [
