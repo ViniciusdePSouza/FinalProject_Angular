@@ -4,6 +4,8 @@ import { Dish } from '../../../assets/interfaces/dishInterface'
 
 import { TranslateService } from "@ngx-translate/core";
 
+import { DishServiceService } from 'src/app/services/dish-service.service';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -107,7 +109,7 @@ export class MenuComponent implements OnInit {
     },
   ]
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private dishService: DishServiceService) {
     this.translate.setDefaultLang('pt-bt');
     this.translate.use('pt-br');
 
@@ -115,7 +117,9 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+    this.dishService.get('main').subscribe(response => {
+      console.log(response)
+    })
   }
 
 }

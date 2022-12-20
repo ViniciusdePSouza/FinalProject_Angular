@@ -8,6 +8,7 @@ import { MenuComponent } from './menu.component'
 //Modules
 import { SharedModule } from '../../Components/shared.module'
 import { TranslateModule } from '@ngx-translate/core';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     CommonModule,
     TranslateModule,
+    HttpClientModule
   ],
   providers: [],
   exports: [
