@@ -1,15 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 
-import { Dish } from '../../assets/interfaces/dishInterface'
-
-export abstract class BaseService<Dish> {
+export abstract class BaseService<T> {
     _httpClient!: HttpClient
 
     constructor (private baseUrl: string, private resource: string, private httpClient: HttpClient) {
         this._httpClient = httpClient
     }
 
-    create(obj: Dish) {
+    create(obj: T) {
         return this._httpClient.post(
             `${this.baseUrl}/${this.resource}`, JSON.stringify(obj)
         )
@@ -22,7 +20,7 @@ export abstract class BaseService<Dish> {
     }
 
     get(params?: any) {
-        return this._httpClient.get<Dish[]>(
+        return this._httpClient.get<T[]>(
             `${this.baseUrl}/${this.resource}`, {params}
         )
     }

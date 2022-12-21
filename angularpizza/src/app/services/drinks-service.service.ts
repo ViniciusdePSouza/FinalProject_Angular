@@ -7,9 +7,9 @@ import { Dish } from '../../assets/interfaces/dishInterface'
 @Injectable({
   providedIn: 'root'
 })
-export class DishServiceService extends BaseService<Dish> {
+export class DrinkService extends BaseService<Dish> {
 
   constructor(private http: HttpClient) {
-    super('http://localhost:3333', 'getters/main', http)
+    super('http://localhost:3333/getters', '/drink', http)
    }
 }
