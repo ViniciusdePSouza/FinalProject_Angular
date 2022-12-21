@@ -11,13 +11,13 @@ import { Dish } from '../../../assets/interfaces/dishInterface'
 })
 export class CardComponent implements OnInit {
 
-  dishPath!: string
+  photoPath!: string
 
   @Input()
   dish!: Dish
 
   constructor() {
-    this.dishPath = '/assets/img/Spaguetti-Gambe.png'
+    this.photoPath = 'http://localhost:3333/files/'
    }
 
   ngOnInit(): void {
