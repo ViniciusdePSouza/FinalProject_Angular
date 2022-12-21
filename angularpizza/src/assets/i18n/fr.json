@@ -12,7 +12,8 @@
     },
 
     "button": {
-        "title": "Connexion"
+        "title": "Connexion",
+        "createAcc": "Créer un Compte"
     },
 
     "anchor": {

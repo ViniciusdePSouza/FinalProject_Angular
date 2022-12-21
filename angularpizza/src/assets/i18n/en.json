@@ -8,11 +8,13 @@
         "titlePassword": "Password",
         "placeholderName": "Please enter your name",
         "titleName": "Name",
-        "placeholderEmail": "someone@email.com"
+        "placeholderEmail": "someone@email.com",
+        "buttonTitle": "Login"
     },
 
     "button": {
-        "title": "Login"
+        "title": "Login",
+        "createAcc": "Create Account"
     },
 
     "anchor": {

@@ -7,10 +7,12 @@
         "titlePassword": "Senha",
         "placeholderName": "Insira seu nome",
         "titleName": "Nome",
-        "placeholderEmail": "fulanodasilva@email.com"
+        "placeholderEmail": "fulanodasilva@email.com",
+        "buttonTitle": "Entrar"
     },
     "button": {
-        "title": "Entrar"
+        "title": "Entrar",
+        "createAcc": "Criar Conta"
     },
     "anchor": {
         "title": "Criar nova conta",
