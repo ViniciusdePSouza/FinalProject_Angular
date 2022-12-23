@@ -8,7 +8,7 @@
         <img [src]="logoPath" alt="">
         <h1> Food Angular </h1>
     </header>
-    <form >
+    <form>
         <h2>{{'form.title' | translate }}</h2>
         <input-form title="{{'input.titleName' | translate}}" placeholder="{{'input.placeholderName' | translate}}" [control]="$any(signupForm.controls['name'])"></input-form>
         <input-form title="Email" placeholder="{{'input.placeholderEmail' | translate}}" [control]="$any(signupForm.controls['email'])"></input-form>
