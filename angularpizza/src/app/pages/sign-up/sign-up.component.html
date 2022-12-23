@@ -8,14 +8,14 @@
         <img [src]="logoPath" alt="">
         <h1> Food Angular </h1>
     </header>
-    <form>
+    <form >
         <h2>{{'form.title' | translate }}</h2>
-        <input-form title="{{'input.titleName' | translate}}" placeholder="{{'input.placeholderName' | translate}}" title="{{'input.titleName' | translate}}"></input-form>
-        <input-form title="Email" placeholder="{{'input.placeholderEmail' | translate}}"></input-form>
-        <input-form type="password" placeholder="{{'input.placeholderPassword' | translate}}" title="{{'input.titlePassword' | translate}}"></input-form>
-        <app-button title="{{'button.createAcc' | translate}}"></app-button>
+        <input-form title="{{'input.titleName' | translate}}" placeholder="{{'input.placeholderName' | translate}}" [control]="$any(signupForm.controls['name'])"></input-form>
+        <input-form title="Email" placeholder="{{'input.placeholderEmail' | translate}}" [control]="$any(signupForm.controls['email'])"></input-form>
+        <input-form type="password" placeholder="{{'input.placeholderPassword' | translate}}" title="{{'input.titlePassword' | translate}}" [control]="$any(signupForm.controls['password'])"></input-form>
+        <app-button title="{{'button.createAcc' | translate}}" (click)="handleSubmit({})"></app-button>
 
-        <a routerLink="" > {{'anchor.get-back' | translate}} </a>
+        <a routerLink=""> {{'anchor.get-back' | translate}} </a>
     </form>
 </div>
  

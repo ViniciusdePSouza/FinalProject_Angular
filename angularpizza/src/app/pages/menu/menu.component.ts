@@ -42,12 +42,10 @@ export class MenuComponent implements OnInit {
 
     this.drinkService.get().subscribe(response => {
       this.drinks = response
-      console.log(this.drinks)
     })
 
     this.dessertService.get().subscribe(response => {
       this.desserts = response
-      console.log(this.desserts)
     })
   }
 

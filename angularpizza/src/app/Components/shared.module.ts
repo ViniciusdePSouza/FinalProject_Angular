@@ -6,9 +6,12 @@ import { ButtonComponent } from './button/button.component';
 import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card.component';
 
+
+
 //Modules
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -16,10 +19,13 @@ import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
         ButtonComponent,
         HeaderComponent,
         CardComponent,
+
     ],
     imports: [
         TranslateModule.forChild(),
-        RouterModule
+        RouterModule,
+        ReactiveFormsModule,
+        FormsModule
     ],
     providers: [],
     exports: [
@@ -27,7 +33,8 @@ import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
         ButtonComponent,
         // TranslateModule,
         HeaderComponent,
-        CardComponent
+        CardComponent,
+
     ]
 })
 export class SharedModule { }

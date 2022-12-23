@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 import { TranslateService } from "@ngx-translate/core";
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+
+import { UserService } from 'src/app/services/user.service';
+
+import { User } from '../../../assets/interfaces/user-interface'
 
 @Component({
   selector: 'sign-up',
@@ -10,12 +15,24 @@ import { TranslateService } from "@ngx-translate/core";
 export class SignUpComponent implements OnInit {
 
   logoPath!: string
+  signupForm!: FormGroup;
+  newUser!: User
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService, 
+    private fb: FormBuilder,
+    private userService: UserService
+    ) {
     this.translate.setDefaultLang('pt-bt');
     this.translate.use('pt-br');
 
     this.logoPath = '/assets/img/logo.svg'
+
+    this.signupForm = this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(8)]],
+      email:  ['', [Validators.required, Validators.minLength(8)]],
+      password:  ['', [Validators.required, Validators.minLength(8)]]
+    })
    }
 
   changeLang(event: any) {
@@ -23,6 +40,13 @@ export class SignUpComponent implements OnInit {
     this.translate.use(lang)
   }
 
+  handleSubmit(event: any) {
+    this.newUser = this.signupForm.value
+
+    this.userService.create(this.newUser)
+
+    console.log(this.newUser)
+  }
 
   ngOnInit(): void {
   }
