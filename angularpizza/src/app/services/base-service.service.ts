@@ -1,15 +1,20 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 export abstract class BaseService<T> {
     _httpClient!: HttpClient
+    headers!: HttpHeaders
 
     constructor (private baseUrl: string, private resource: string, private httpClient: HttpClient) {
         this._httpClient = httpClient
+        this.headers = new HttpHeaders({
+            'content-type': 'application/json'
+        })
     }
 
     create(obj: T) {
-        return this._httpClient.post(
-            `${this.baseUrl}/${this.resource}`, JSON.stringify(obj)
+        console.log(JSON.stringify(obj))
+        return this._httpClient.post<T>(
+            `${this.baseUrl}/${this.resource}`, JSON.stringify(obj), {headers: this.headers}
         )
     }
 
