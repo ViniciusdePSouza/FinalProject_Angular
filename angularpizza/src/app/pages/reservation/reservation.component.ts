@@ -37,6 +37,8 @@ export class ReservationComponent implements OnInit {
       Mesa para: ${this.reservationForm.value.tableFor} ;
       Data: ${this.reservationForm.value.date}
     `)
+
+    this.reservationForm.reset()
   }
 
   ngOnInit(): void {

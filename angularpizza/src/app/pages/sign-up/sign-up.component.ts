@@ -45,6 +45,8 @@ export class SignUpComponent implements OnInit {
 
     this.userService.create(this.newUser)
 
+    this.signupForm.reset()
+
     console.log(this.newUser)
   }
 

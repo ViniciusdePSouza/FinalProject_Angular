@@ -37,6 +37,8 @@ export class SignInComponent implements OnInit {
   
   handleSignIn(){
     console.log(this.signInForm.value)
+
+    this.signInForm.reset()
   }
 
   changeLang(event: any) {

@@ -4,37 +4,43 @@ div {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
 
+    
     >label {
         display: flex;
         flex-direction: column;
-
+        
         width: 100%;
-
+        
         color: var(--white);
         font-size: 1.6rem;
         font-weight: 300;
 
         margin-bottom: 3.2rem;
-
+        
         > input {
             width: 100%;
-
+            
             margin-top: 1rem;
-
+            
             border: 1px solid var(--grey);
             background: transparent;
-
+            
             padding: 1.2rem;
-
+            
             border-radius: 5px;
-
+            
             font-size: 1.6rem;
             font-weight: 300;
-
+            
             color: var(--white);
-
+            
             input::placeholder {
                 color: ar(--grey);
+            }
+            
+            input::-webkit-calendar-picker-indicator{
+                color: var(--grey);
+                cursor : pointer;
             }
         }
     }
