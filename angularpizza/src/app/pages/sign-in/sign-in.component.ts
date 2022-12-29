@@ -7,6 +7,8 @@ import { UserService } from 'src/app/services/user.service';
 
 import { LoginUser } from 'src/assets/interfaces/user-interface';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'sign-in',
   templateUrl: './sign-in.component.html',
@@ -17,12 +19,12 @@ export class SignInComponent implements OnInit {
   loginUser!: LoginUser
   signInForm!: FormGroup
 
-
   constructor(
     private translate: TranslateService,
     private fb: FormBuilder,
     private userService: UserService,
     private authService: AuthService,
+    private router: Router
     ) {
     this.translate.setDefaultLang('pt-bt');
     this.translate.use('pt-br');
@@ -42,14 +44,23 @@ export class SignInComponent implements OnInit {
   handleSignIn(){
     this.loginUser = this.signInForm.value
 
-    this.authService.create(this.loginUser).subscribe(response => {
-      const user = response.user
-      const token = response.token
+    // localStorage.removeItem('@angularfood:user')
+    // localStorage.removeItem('@angularfood:token')
 
-      localStorage.setItem('@angularfood:user', JSON.stringify(user))
-      localStorage.setItem('@angularfood:token', token) 
-    })
-    
+    try{
+      this.authService.create(this.loginUser).subscribe(response => {
+        const user = response.user
+        const token = response.token
+  
+        localStorage.setItem('@angularfood:user', JSON.stringify(user))
+        localStorage.setItem('@angularfood:token', token) 
+
+        this.router.navigate([''])
+      })
+
+    } catch(error) {
+      alert(error)
+    }
 
     this.signInForm.reset()
   }

@@ -8,10 +8,18 @@ import { AboutComponent } from './pages/about/about.component'
 import { ReservationComponent } from './pages/reservation/reservation.component'
 import { MenuComponent } from './pages/menu/menu.component'
 
+import { AuthGuard } from './guards/auth-guard..service'
+
 const routes: Routes = [
   {
     path: '',
-    component: SignInComponent, 
+    component: HomeComponent,
+    canActivate: [AuthGuard]
+  },
+
+  {
+    path: 'login',
+    component: SignInComponent,
   },
 
   {
@@ -19,13 +27,9 @@ const routes: Routes = [
     component: SignUpComponent
   },
 
+
   {
-    path: 'home',
-    component: HomeComponent
-  },
-  
-  {
-    path:'about',
+    path: 'about',
     component: AboutComponent
   },
 
@@ -38,7 +42,7 @@ const routes: Routes = [
     path: 'menu',
     component: MenuComponent
   },
-  
+
   {
     path: '**',
     redirectTo: ''
