@@ -12,7 +12,7 @@
         <h2>{{'form.title' | translate }}</h2>
         <input-form title="Email" placeholder="{{'input.placeholderEmail' | translate}}" [control]="$any(signInForm.controls['email'])" type='text'></input-form>
         <input-form title="{{'input.titlePassword' | translate}}" placeholder="{{'input.placeholderPassword' | translate}}" type="password" [control]="$any(signInForm.controls['password'])"></input-form>
-        <app-button routerLink="/home" title="{{'button.title' | translate}}" (click)="handleSignIn()"></app-button>
+        <app-button title="{{'button.title' | translate}}" (click)="handleSignIn()"></app-button>
 
         <a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page"> {{'anchor.title' | translate}} </a>
     </form>

@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { TranslateService } from "@ngx-translate/core";
+import { AuthService } from 'src/app/services/auth.service';
 import { UserService } from 'src/app/services/user.service';
 
+import { LoginUser } from 'src/assets/interfaces/user-interface';
 
 @Component({
   selector: 'sign-in',
@@ -12,13 +14,15 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class SignInComponent implements OnInit {
   logoPath!: string
-
+  loginUser!: LoginUser
   signInForm!: FormGroup
+
 
   constructor(
     private translate: TranslateService,
     private fb: FormBuilder,
-    private userService: UserService
+    private userService: UserService,
+    private authService: AuthService,
     ) {
     this.translate.setDefaultLang('pt-bt');
     this.translate.use('pt-br');
@@ -36,7 +40,16 @@ export class SignInComponent implements OnInit {
   }
   
   handleSignIn(){
-    console.log(this.signInForm.value)
+    this.loginUser = this.signInForm.value
+
+    this.authService.create(this.loginUser).subscribe(response => {
+      const user = response.user
+      const token = response.token
+
+      localStorage.setItem('@angularfood:user', JSON.stringify(user))
+      localStorage.setItem('@angularfood:token', token) 
+    })
+    
 
     this.signInForm.reset()
   }

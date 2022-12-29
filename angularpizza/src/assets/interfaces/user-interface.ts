@@ -10,3 +10,8 @@ export interface NewUser {
   password: string,
   isAdm: boolean
 }
+
+export interface LoginUser {
+  user: any[],
+  token: string
+}
