@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { SignInModule } from './pages/sign-in/sign-in.module';
 import { SignUpModule } from './pages/sign-up/sign-up.module';
@@ -15,6 +15,7 @@ import { AboutModule } from './pages/about/about.module';
 import { ReservationModule } from './pages/reservation/reservation.module';
 import { MenuModule } from './pages/menu/menu.module';
 import { SharedModule } from './Components/shared.module';
+import { AuthInterceptor } from 'src/auth/auth-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { SharedModule } from './Components/shared.module';
     SharedModule
   ],
   providers: [
-    HttpClient
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]
 })

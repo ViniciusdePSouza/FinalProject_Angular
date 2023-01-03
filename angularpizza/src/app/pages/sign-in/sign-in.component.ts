@@ -22,7 +22,6 @@ export class SignInComponent implements OnInit {
   constructor(
     private translate: TranslateService,
     private fb: FormBuilder,
-    private userService: UserService,
     private authService: AuthService,
     private router: Router
     ) {
@@ -43,9 +42,6 @@ export class SignInComponent implements OnInit {
   
   handleSignIn(){
     this.loginUser = this.signInForm.value
-
-    // localStorage.removeItem('@angularfood:user')
-    // localStorage.removeItem('@angularfood:token')
 
     try{
       this.authService.create(this.loginUser).subscribe(response => {
