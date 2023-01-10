@@ -5,6 +5,7 @@ import { CardComponent } from './card.component';
 describe('CardComponent', () => {
   let component: CardComponent;
   let fixture: ComponentFixture<CardComponent>;
+  let photoPath!: string 
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -15,6 +16,8 @@ describe('CardComponent', () => {
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+
+    component.photoPath="algo"
   });
 
   it('should create', () => {

@@ -8,7 +8,7 @@ import { AboutComponent } from './pages/about/about.component'
 import { ReservationComponent } from './pages/reservation/reservation.component'
 import { MenuComponent } from './pages/menu/menu.component'
 
-import { AuthGuard } from './guards/auth-guard..service'
+import { AuthGuard } from './guards/auth-guard.service'
 
 const routes: Routes = [
   {

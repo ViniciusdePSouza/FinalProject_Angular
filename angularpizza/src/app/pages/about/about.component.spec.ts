@@ -1,4 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { SharedModule } from 'src/app/Components/shared.module';
 
 import { AboutComponent } from './about.component';
 
@@ -8,7 +11,12 @@ describe('AboutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
+      declarations: [ AboutComponent ],
+      imports: [
+        SharedModule,
+        FormsModule,
+        RouterModule
+      ],
     })
     .compileComponents();
 
