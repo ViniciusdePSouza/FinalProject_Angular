@@ -1,5 +1,10 @@
 import { PathLocationStrategy } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/Components/shared.module';
 
 import { ReservationComponent } from './reservation.component';
 
@@ -9,7 +14,11 @@ describe('ReservationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ReservationComponent]
+      declarations: [ReservationComponent],
+      imports: [    SharedModule,
+        FormsModule,
+        RouterModule,
+        TranslateModule]
     })
       .compileComponents();
 
@@ -30,9 +39,10 @@ describe('ReservationComponent', () => {
 
       component.reservationForm.patchValue(reservationData)
 
-      fixture.nativeElement.querySelector('button')
-
+      const button = fixture.debugElement.query(By.css('.submit-btn'));
       const handleReservationSpy =  jest.spyOn(component,'handleReservation')
+
+      button.triggerEventHandler('click', null); 
 
       expect(handleReservationSpy).toHaveBeenCalled()
     });

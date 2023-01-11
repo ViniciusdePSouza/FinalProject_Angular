@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { TranslateService } from "@ngx-translate/core";
-import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-reservation',
@@ -16,7 +15,7 @@ export class ReservationComponent implements OnInit {
 
   reservationForm!: FormGroup
 
-  constructor(private translate: TranslateService, private fb: FormBuilder, private userService: UserService) {
+  constructor(private translate: TranslateService, private fb: FormBuilder) {
     this.translate.setDefaultLang('pt-bt');
     this.translate.use('pt-br');
 

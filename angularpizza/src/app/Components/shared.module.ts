@@ -6,8 +6,6 @@ import { ButtonComponent } from './button/button.component';
 import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card.component';
 
-
-
 //Modules
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';

@@ -9,7 +9,7 @@
             <input-form title="Email" placeholder="{{'input.placeholderEmail' | translate}}" [control]="$any(reservationForm.controls['email'])"></input-form>
             <input-form title="{{'reservation.date' | translate }}" type="date" [control]="$any(reservationForm.controls['date'])"></input-form>
             <input-form title="{{'reservation.table-for' | translate }}" type="number" [control]="$any(reservationForm.controls['tableFor'])"></input-form>
-            <app-button title="{{'reservation.button' | translate }}" (click)="handleReservation()"></app-button>
+            <app-button title="{{'reservation.button' | translate }}" (click)="handleReservation()" class="submit-btn"></app-button>
         </form>
         <img src="{{restaurantPath}}" alt="Foto do restaurant" id="restaurant-img">
     </div>
