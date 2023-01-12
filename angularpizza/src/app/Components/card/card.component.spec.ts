@@ -5,19 +5,26 @@ import { CardComponent } from './card.component';
 describe('CardComponent', () => {
   let component: CardComponent;
   let fixture: ComponentFixture<CardComponent>;
-  let photoPath!: string 
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
+      declarations: [CardComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
 
-    component.photoPath="algo"
+    component.dish = {
+      id: Math.random()*1560,
+      ingredients: ['test', 'test2'],
+      name: 'Testing Name',
+      description: 'Just testing',
+      photo: 'TestPhoto.png',
+      price: 45.98,
+      type: 'test'
+    }
   });
 
   it('should create', () => {

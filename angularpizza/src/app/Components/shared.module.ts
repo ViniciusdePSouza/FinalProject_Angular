@@ -23,16 +23,16 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
         TranslateModule.forChild(),
         RouterModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
     ],
     providers: [],
     exports: [
         InputFormComponent,
         ButtonComponent,
-        // TranslateModule,
+        TranslateModule,
         HeaderComponent,
         CardComponent,
-
+        TranslateModule
     ]
 })
 export class SharedModule { }

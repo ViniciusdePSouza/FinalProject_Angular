@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from 'src/app/Components/shared.module';
+import { RouterTestingModule } from "@angular/router/testing";
 
 import { HomeComponent } from './home.component';
 
@@ -17,7 +18,8 @@ describe('HomeComponent', () => {
         SharedModule,
         FormsModule,
         RouterModule,
-        TranslateModule
+        TranslateModule.forRoot(),
+        RouterTestingModule
       ],
     })
     .compileComponents();
@@ -25,5 +27,9 @@ describe('HomeComponent', () => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 });

@@ -6,7 +6,7 @@ import { HomeComponent } from './home.component';
 
 //Modules
 import { SharedModule } from '../../Components/shared.module'
-import { RouterModule, ActivatedRoute, ParamMap } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 

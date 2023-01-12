@@ -9,7 +9,7 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     this.translate.setDefaultLang('pt-bt');
     this.translate.use('pt-br');
   }
@@ -21,6 +21,4 @@ export class HeaderComponent implements OnInit {
     const lang: string = event?.target?.value || 'pt-br'
     this.translate.use(lang)
   }
-
-
 }
